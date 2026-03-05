@@ -3,11 +3,6 @@ body {
     font-family: serif;
 }
 
-.pagina-principal {
-    background-color: rgb(24, 13, 26);
-    color: white;
-}
-
 .barra-menu {
     background-color: rgb(51, 51, 51);
     display: flex;
@@ -25,67 +20,47 @@ body {
     color: black;
 }
 
-.barra-menu a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.barra-menu a.admin-link {
-    margin-left: auto;
-}
-
 .barra-menu a.admin-link-active {
     margin-left: auto;
     background-color: #04AA6D;
     color: white;
 }
 
-.banner {
+.form-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 400px;
-    background-image: url("ImgWeb/TiendaGeneral.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 15px;    
 }
 
-.logo {
-    width: 450px; 
-}
-
-.contenido {
-    text-align: center;
-    padding: 40px;
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    transition: background-color 0.3s;
 }
 
-.ajuste-redes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;                  
-    margin-top: 40px;
-    margin-bottom: 40px;           
+input[type="submit"]:hover {
+    background-color: #038d5a;
 }
-
-.redes {
-    width: auto; 
-    height: 50px;
-    object-fit: contain; 
-    transition: transform 0.3s ease; 
-}
-
 
 .footer {
     background-color: rgb(51, 51, 51);
     color: white;
-    padding: 10px ;
+    padding: 10px;
     height: auto;
 }
 
@@ -94,189 +69,53 @@ h1{
     font-size: 14px;
 }
 
-.mision-cuerpo{
-    margin:0;
-}
-
-.mision-cuerpo .layout{
-    display:flex;
-    height:100vh;
-}
-
-.mision-cuerpo .izquierda{
-    flex:1;
-    background-image:url("ImgWeb/ImagenIzq.png");
-    background-size:cover;
-    background-position:center;
-}
-
-.mision-cuerpo .derecha{
-    flex:1;
-    background-image:url("ImgWeb/ImagenDer.png");
-    background-size:cover;
-    background-position:center;
-}
-
-.mision-cuerpo #container1{
-    width:450px;
-    background-color:rgb(24, 13, 26);
-    border-left:3px solid silver;
-    border-right:3px solid silver;
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    padding:40px;
-}
-
-.mision-cuerpo #container1 p{
-    line-height:1.6;
-}
-
-.mision-cuerpo #container1 a{
-    color:white;
-    text-decoration:none;
-    font-weight: bold;
-}
-
-.mision-cuerpo #container1 a:hover{
-    text-decoration:underline;
-}
-.vision-cuerpo{
-    margin:0;
-}
-
-.vision-cuerpo .layout{
-    display:flex;
-    height:100vh;
-}
-
-.vision-cuerpo .izquierda{
-    flex:1;
-    background-image:url("ImgWeb/ImagenIzq.png");
-    background-size:cover;
-    background-position:center;
-}
-
-.vision-cuerpo .derecha{
-    flex:1;
-    background-image:url("ImgWeb/ImagenDer.png");
-    background-size:cover;
-    background-position:center;
-}
-
-.vision-cuerpo #container2{
-    width:450px;
-    background-color:rgb(24, 13, 26);
-    border-left:3px solid silver;
-    border-right:3px solid silver;
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-    padding:40px;
-}
-
-.vision-cuerpo #container2 p{
-    line-height:1.6;
-}
-
-.vision-cuerpo #container2 a{
-    color:white;
-    text-decoration:none;
-    font-weight: bold;
-}
-
-.vision-cuerpo #container2 a:hover{
-    text-decoration:underline;
-}
-
-.catalogo-cuerpo{
-    background-image: url("ImgWeb/fondoCatalogo.png");
+.catalogo-cuerpo {
+    background-image: url("https://cdn.jsdelivr.net/gh/karlo7rdtz/BombolomboStorePaginaWeb@main/IMGweb/FondoCatalogo.png");
     background-size: cover;
     background-position: center;
-    margin:0;
+    background-attachment: fixed;
+    margin: 0;
 }
 
-.catalogo-contenedor{
-    width:900px;
-    margin:60px auto;
-    background:rgb(24, 13, 26);
-    border-left:3px solid silver;
-    border-right:3px solid silver;
-    border-top:3px solid silver;
-    border-bottom:3px solid silver;
-    padding:40px;
-    border-radius:10px;
+.catalogo-contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: 60px auto;
+    background: rgb(24, 13, 26);
+    border: 3px solid silver;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.categorias{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    margin-bottom:20px;
-}
-
-.categorias a{
-    font-size:18px;
-    text-decoration:none;
-    color:rgb(255, 255, 255);
-    cursor:pointer;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.categoria-activa{
-    font-weight:bold;
-}
-
-.catalogo-contenedor h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.catalogo{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:40px;
-}
-
-.producto{
-    text-align:center;
-}
-
-.imagen{
-    width:200px;
-    height:200px;
-    background-color:#ddd;
-    margin:auto;
-}
-
-
-.precio{
-    margin-top:10px;
-    font-weight:bold;
+.catalogo-contenedor h2 {
+    text-align: center;
+    margin-bottom: 40px;
     color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
 }
 
-
-.boton-compra{
-    margin-top:10px;
-    padding:8px 18px;
-    background:#ccc;
-    border:none;
-    border-radius:20px;
-    cursor:pointer;
+.catalogo-contenedor h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
-.boton-compra:hover{
-    background:#999;
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.formulario {
+    text-align: center;
+    flex: 1 1 300px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-sizing: border-box;
 }
