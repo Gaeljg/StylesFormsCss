@@ -154,3 +154,14 @@ input[type="submit"]:hover {
 .navbar {
     padding: 0 !important;
 }
+
+.just-validate-error-label {
+    background: white !important;
+    color: black !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid silver;
+    margin-top: 5px;
+    display: inline-block;
+}
