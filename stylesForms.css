@@ -119,3 +119,38 @@ input[type="submit"]:hover {
     border: 1px solid #444;
     box-sizing: border-box;
 }
+
+/* Color de fondo oscuro para la barra */
+.bg-custom-dark {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+/* Estilo general de los enlaces */
+.nav-link {
+    color: #f2f2f2 !important;
+    padding: 20px 16px !important;
+    text-decoration: none;
+    font-family: serif;
+    transition: 0.3s;
+}
+
+/* Efecto Hover (Gris claro) */
+.nav-link:hover {
+    background-color: #ddd !important;
+    color: black !important;
+}
+
+/* Estilo del "Botón" verde (Administrador e Index) */
+.admin-link, .nav-link.active {
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+.admin-link:hover {
+    background-color: #038d5a !important;
+}
+
+/* Quitar márgenes extra de Bootstrap para que se vea limpio */
+.navbar {
+    padding: 0 !important;
+}
