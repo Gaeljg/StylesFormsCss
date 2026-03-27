@@ -1,72 +1,6 @@
 body {
     margin: 0;
-    font-family: serif;
-}
-
-.barra-menu {
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: flex-start;
-}
-
-.barra-menu a {
-    color: #f2f2f2;
-    padding: 20px 16px;
-    text-decoration: none;
-}
-
-.barra-menu a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.barra-menu a.admin-link-active {
-    margin-left: auto;
-    background-color: #04AA6D;
-    color: white;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;    
-}
-
-input, select, textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-input[type="submit"] {
-    background-color: #04AA6D;
-    color: white;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 12px;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #038d5a;
-}
-
-.footer {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    padding: 10px;
-    height: auto;
-}
-
-.footer-contenido {
-    text-align: center;
-    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 .catalogo-cuerpo {
@@ -75,6 +9,43 @@ input[type="submit"]:hover {
     background-position: center;
     background-attachment: fixed;
     margin: 0;
+}
+
+.bg-custom-dark {
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.navbar-nav .nav-link {
+    color: #f2f2f2 !important;
+    padding: 15px 16px !important;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ddd;
+    color: black !important;
+    border-radius: 5px;
+}
+
+.navbar-nav .active {
+    background-color: #04AA6D !important;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.admin-link {
+    background-color: transparent; 
+    color: #f2f2f2 !important;
+    border-radius: 5px;
+}
+
+.admin-link:hover {
+    background-color: #ddd !important;
+    color: black !important;
+}
+
+.admin-link.active {
+    background-color: #04AA6D !important;
+    color: white !important;
 }
 
 .catalogo-contenedor {
@@ -91,7 +62,6 @@ input[type="submit"]:hover {
     text-align: center;
     margin-bottom: 40px;
     color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 28px;
 }
 
@@ -99,60 +69,33 @@ input[type="submit"]:hover {
     text-align: center;
     margin-bottom: 40px;
     color: rgb(255, 255, 255);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-}
-
-.catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
 }
 
 .formulario {
     text-align: center;
-    flex: 1 1 300px;
     background-color: rgba(255, 255, 255, 0.05);
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #444;
     box-sizing: border-box;
+    height: 100%;
 }
 
-/* Color de fondo oscuro para la barra */
-.bg-custom-dark {
-    background-color: rgb(51, 51, 51) !important;
+input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-/* Estilo general de los enlaces */
-.nav-link {
-    color: #f2f2f2 !important;
-    padding: 20px 16px !important;
-    text-decoration: none;
-    font-family: serif;
-    transition: 0.3s;
-}
-
-/* Efecto Hover (Gris claro) */
-.nav-link:hover {
-    background-color: #ddd !important;
-    color: black !important;
-}
-
-/* Estilo del "Botón" verde (Administrador e Index) */
-.admin-link, .nav-link.active {
-    background-color: #04AA6D !important;
-    color: white !important;
-}
-
-.admin-link:hover {
-    background-color: #038d5a !important;
-}
-
-/* Quitar márgenes extra de Bootstrap para que se vea limpio */
-.navbar {
-    padding: 0 !important;
+input[type="submit"]:hover {
+    background-color: #038d5a;
 }
 
 .just-validate-error-label {
@@ -164,4 +107,5 @@ input[type="submit"]:hover {
     border: 1px solid silver;
     margin-top: 5px;
     display: inline-block;
+    font-size: 12px;
 }
